@@ -1,0 +1,9 @@
+ZÄHLENWENN
+
+Was bezweckt diese Funktion?
+	- Sie zählt die Anzahl der Zellen, die ein bestimmtes Suchkriterium erfüllen. 
+	Hierbei kann es sich um Strings oder Integer halten. Für den Rest kein Bock auszuprobieren.
+Wie ist die Syntax dieser Funktion?
+	- Der Standartsyntax ist =ZÄHLENWENN(Suchort; Suchkriterium)
+	- Auch kann damit die Anzahl der Zellen in einem Bereich gesucht werden =ZÄHLENWENN(Suchort; "*")
+	- Nach Anzahl der Zellen über Wert x suchen: =ZÄHLENWENN(Suchort; ">55")

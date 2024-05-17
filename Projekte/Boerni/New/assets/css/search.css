@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* nav */
+.line{
+    position: absolute;
+    width: 70px;
+    transform: translate(25px);
+
+    margin-top: 40px;
+    transition: all 0.5s ease-in-out;
+
+    background: #709775;
+    height: 3px;
+}
+
+.menu{
+    margin-left: 25px;
+    margin-right: 25px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 47px;
+
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
+.menu:nth-child(1) {
+    color: rgb(0, 0, 0);
+}
+
+.menu:nth-child(2):hover ~.line{
+    width: 60px;
+    transform: translate(145px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(2):hover{
+    color: black;
+}
+
+.menu:nth-child(3):hover ~.line{
+    width: 130px;
+    transform: translate(255px);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu:nth-child(3):hover{
+    color: black;
+}
+/* nav searcharea */
+#searchArea{
+    position: relative;
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 10px;
+
+    width: 0px;
+    border: 1px #7C7C7C solid;
+    opacity: 0;
+    transition: 0.5s;
+
+
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+
+#searchArea:focus{
+    outline-color: #709775 !important;
+}
+
+
+ /* scrollbar */
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+/* section */
+.container{
+    width: 100%;
+    height: 170%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchTitle{
+    font-size: 50px;
+    font-family: 'Raleway';
+    margin: 70px;
+}
+.ergebnisse{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    overflow: hidden;
+    background: rgba(150, 150, 150, 0.492);
+    width: 1000px;
+    height: auto;
+    border-radius: 15px;
+}
+.card{
+    background: rgb(156, 156, 156);
+    width: 280px;
+    height: 250px;
+    text-decoration: none;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.image{
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 170px;
+    border-radius: 15px;
+}
+.cardTitle{
+    margin-top: 10px;
+    color: black;
+}
+.card:hover{
+    background: rgb(136, 136, 136);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

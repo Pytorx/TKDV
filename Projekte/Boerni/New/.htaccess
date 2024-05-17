@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+ErrorDocument 404 https://404.eu/
+RewriteRule ^business/$ /business.html [R=301,L]

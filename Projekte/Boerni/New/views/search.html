@@ -1,0 +1,40 @@
+<head>
+    <title> B&ouml;rni - Home</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/navbar/navbar.css">
+</head>
+
+<body onload=checkSearch();>
+    <header>
+        <nav>
+            <div class="items">
+                <h2 class="logo">B&ouml;rni</h2>
+                <ul>
+                    <a class="menu" href="#">Home</a>
+                    <a class="menu" href="/shop/shop.html">Shop</a>
+                    <a class="menu" href="/impressum/impressum.html">Impressum</a>
+                    <div class="line"></div>
+
+                </ul>
+                <div class="actions">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass search"></i>
+                    <input id="searchArea" type="text">
+                    <i class="fa-sharp fa-solid fa-cart-shopping cart"><sub class="cart_status"></sub></i>
+                    <div class="profile"></div>
+                </div>
+            </div>
+            <hr>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <h1 class="searchTitle">Suchergebnisse für: </h1>
+            <div id="search"></div>
+            <div class="ergebnisse"></div> 
+        </div>
+        <script src="/navbar/navbar.js"></script>
+        <script src="/search/search.js"></script>
+    </section>
